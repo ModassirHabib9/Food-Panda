@@ -8,85 +8,96 @@ class CardScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-        child: Center(
-          child: Stack(
-            children: [
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  const Icon(
-                    Icons.payment_outlined,
-                    color: Colors.pink,
-                    size: 150,
+      appBar: AppBar(
+        title: const Text('Cart'),
+        leadingWidth: 30,
+        leading: IconButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          icon: Icon(
+            Icons.close,
+            color: Colors.white,
+          ),
+        ),
+      ),
+      body: Center(
+        child: Stack(
+          children: [
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Icon(
+                  Icons.payment_outlined,
+                  color: Colors.pink,
+                  size: 150,
+                ),
+                const Text(
+                  "Hungry?",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
                   ),
-                  const Text(
-                    "Hungry?",
+                ),
+                SizedBox(height: 10),
+                const Text(
+                  "You haven't added anything to your cart!",
+                  style: TextStyle(
+                    fontSize: 14,
+                  ),
+                ),
+                SizedBox(height: 10),
+                TextButton(
+                  style: TextButton.styleFrom(
+                    primary: Colors.white,
+                    backgroundColor: Colors.pink,
+                  ),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const HomeScreen(),
+                      ),
+                    );
+                  },
+                  child: const Text(
+                    "Browse",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: 30,
+                      fontSize: 20,
                     ),
+                  ),
+                ),
+              ],
+            ),
+            /*Positioned(
+              top: 0,
+              left: 0,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  IconButton(
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                    icon: const Icon(Icons.close),
+                  ),
+                  const SizedBox(
+                    width: 8,
                   ),
                   const Text(
-                    "You haven't added anything to your cart!",
+                    "Cart",
                     style: TextStyle(
-                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 25,
                     ),
-                  ),
-                  TextButton(
-                    style: TextButton.styleFrom(
-                      primary: Colors.white,
-                      backgroundColor: Colors.pink,
-                    ),
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => const HomeScreen(),
-                        ),
-                      );
-                    },
-                    child: const Text(
-                      "Browse",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 20,
-                      ),
-                    ),
-                  ),
+                  )
                 ],
               ),
-              Positioned(
-                top: 15,
-                child: Row(
-                  children: [
-                    IconButton(
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const HomeScreen(),
-                          ),
-                        );
-                      },
-                      icon: const Icon(Icons.arrow_back_ios),
-                    ),
-                    const SizedBox(
-                      width: 15,
-                    ),
-                    const Text(
-                      "Cart",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 25,
-                      ),
-                    )
-                  ],
-                ),
-              ),
-            ],
-          ),
+            ),*/
+          ],
         ),
       ),
     );

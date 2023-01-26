@@ -5,7 +5,11 @@ import 'package:get/get.dart';
 import '../../controller/deals_controller.dart';
 import '../../model/food_custom.dart';
 import '../../utils/default_color.dart';
+import '../card_screen/card_screen.dart';
 import '../favourities/favourit.dart';
+import '../pickup_screen/details.dart';
+import '../pickup_screen/pickup_sreen.dart';
+import '../shop_dine_in/dine_in_shop.dart';
 import 'drawer.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -20,18 +24,6 @@ class HomeScreen extends StatelessWidget {
       backgroundColor: DefaultColor.backgroundColor,
       appBar: AppBar(
         centerTitle: false,
-        // leading: Row(
-        //   children: [
-        //     IconButton(
-        //       icon: const Icon(
-        //         Icons.list,
-        //       ),
-        //       onPressed: () {
-        //         // Scaffold.of(context).openDrawer();
-        //       },
-        //     ),
-        //   ],
-        // ),
         title: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: const [
@@ -63,12 +55,12 @@ class HomeScreen extends StatelessWidget {
           ),
           IconButton(
             onPressed: () {
-              /*  Navigator.push(
+              Navigator.push(
                 context,
                 MaterialPageRoute(
                   builder: (context) => const CardScreen(),
                 ),
-              );*/
+              );
             },
             icon: const Icon(Icons.card_travel),
           ),
@@ -105,7 +97,7 @@ class HomeScreen extends StatelessWidget {
               padding: const EdgeInsets.all(12.0),
               child: Column(
                 children: [
-                  /*GestureDetector(
+                  /* GestureDetector(
                     onTap: (() => Navigator.push(
                           context,
                           MaterialPageRoute(
@@ -147,14 +139,26 @@ class HomeScreen extends StatelessWidget {
                         ],
                       ),
                     ),
-                  ),*/
+                  ),
                   const SizedBox(
                     height: 10,
-                  ),
+                  ),*/
                   Row(
                     children: [
                       GestureDetector(
                         onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => DetailScreen(),
+                            ),
+                          ); /*Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const RestaurantsScreen(),
+                            ),
+                          );*/
+
                           /*Navigator.push(
                             context,
                             MaterialPageRoute(
@@ -198,12 +202,13 @@ class HomeScreen extends StatelessWidget {
                             ),
                             GestureDetector(
                               onTap: () {
-                                /*Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => const PickupScreen(),
-                                ),
-                              );*/
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) =>
+                                        const ShopDineInScreen(),
+                                  ),
+                                );
                               },
                               child: Container(
                                 width: MediaQuery.of(context).size.width * 0.45,
@@ -263,13 +268,13 @@ class HomeScreen extends StatelessWidget {
                                 children: [
                                   GestureDetector(
                                     onTap: () {
-                                      /*Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                          builder: (context) =>
-                                              const PandamartScreen(),
-                                        ),
-                                      );*/
+                                      // Navigator.push(
+                                      //   context,
+                                      //   MaterialPageRoute(
+                                      //     builder: (context) =>
+                                      //         const PandamartScreen(),
+                                      //   ),
+                                      // );
                                     },
                                     child: Column(
                                       crossAxisAlignment:
@@ -300,12 +305,12 @@ class HomeScreen extends StatelessWidget {
                           ),
                           GestureDetector(
                             onTap: () {
-                              /*Navigator.push(
+                              Navigator.push(
                                 context,
                                 MaterialPageRoute(
                                   builder: (context) => const PickupScreen(),
                                 ),
-                              );*/
+                              );
                             },
                             child: Container(
                               width: MediaQuery.of(context).size.width * 0.45,
@@ -349,12 +354,12 @@ class HomeScreen extends StatelessWidget {
                           ),
                           GestureDetector(
                             onTap: () {
-                              /*Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => const PickupScreen(),
-                                ),
-                              );*/
+                              // Navigator.push(
+                              //   context,
+                              //   MaterialPageRoute(
+                              //     builder: (context) => const PickupScreen(),
+                              //   ),
+                              // );
                             },
                             child: Container(
                               width: MediaQuery.of(context).size.width * 0.45,

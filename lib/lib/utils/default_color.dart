@@ -4,6 +4,7 @@ class DefaultColor {
   static const primary = Color(0xffD70F64);
   static const colorBlack = Color(0xff030002);
   static const backgroundColor = Color(0xffeef1f6);
+  static const backgroundWhite = Color(0xffffffff);
   static const MaterialColor primaryswatch =
       MaterialColor(_primaryswatchPrimaryValue, <int, Color>{
     50: Color(0xFFFCE4EE),
@@ -27,4 +28,25 @@ class DefaultColor {
     700: Color(0xFFFF7A9A),
   });
   static const int _primaryswatchAccentValue = 0xFFFFC7D4;
+}
+
+class MyColors {
+  static const Color primaryColor = const Color(0xffd60265);
+  static const Color secondaryTextColor = const Color(0xffd60265);
+
+  static const MaterialColor navy = MaterialColor(
+    0xffd60265,
+    <int, Color>{
+      50: Color(0xffd60265),
+      100: Color(0xffd60265),
+      200: Color(0xffd60265),
+      300: Color(0xffd60265),
+      400: Color(0xffd60265),
+      500: Color(0xffd60265),
+      600: Color(0xffd60265),
+      700: Color(0xffd60265),
+      800: Color(0xffd60265),
+      900: Color(0xffd60265),
+    },
+  );
 }

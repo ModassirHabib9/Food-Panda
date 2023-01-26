@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:foodpanda_clone/lib/utils/default_color.dart';
 import 'package:get/get.dart';
 
-import 'screens/home/home_screen.dart';
+import 'lib/screens/home/home_screen.dart';
 
 void main() {
   runApp(const MyApp());

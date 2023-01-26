@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:foodpanda_clone/lib/screens/favourities/favourit.dart';
 
 import '../../utils/default_color.dart';
+import '../address/address.dart';
 import '../extra/more/settings.dart';
 import '../extra/more/terms_condition.dart';
 
@@ -28,48 +30,70 @@ class HomeDrawer extends StatelessWidget {
               ),
             ),
           ),
-          ListTile(
-            title: Row(
-              children: [
-                Text(
-                  "panda",
-                  style: TextStyle(color: DefaultColor.primary),
-                ),
-                Container(
-                  color: DefaultColor.primary,
-                  child: Text(
-                    "Pay",
-                    style: TextStyle(
-                        fontStyle: FontStyle.italic,
-                        color: DefaultColor.backgroundColor),
-                  ),
-                ),
-              ],
-            ),
-            trailing: Text(
-              "Rs. 0.00",
-              style: TextStyle(color: DefaultColor.primary),
-            ),
-            subtitle: Text("Credit and payment methods"),
-          ),
+          // ListTile(
+          //   title: Row(
+          //     children: [
+          //       Text(
+          //         "panda",
+          //         style: TextStyle(color: DefaultColor.primary),
+          //       ),
+          //       Container(
+          //         color: DefaultColor.primary,
+          //         child: Text(
+          //           "Pay",
+          //           style: TextStyle(
+          //               fontStyle: FontStyle.italic,
+          //               color: DefaultColor.backgroundColor),
+          //         ),
+          //       ),
+          //     ],
+          //   ),
+          //   trailing: Text(
+          //     "Rs. 0.00",
+          //     style: TextStyle(color: DefaultColor.primary),
+          //   ),
+          //   subtitle: Text("Credit and payment methods"),
+          // ),
+          // ListDrawerItem(
+          //   icon: Container(
+          //     color: DefaultColor.primary,
+          //     child: Text(
+          //       " Pro ",
+          //       style: TextStyle(
+          //           fontStyle: FontStyle.italic,
+          //           color: DefaultColor.backgroundColor),
+          //     ),
+          //   ),
+          //   title: "Become a pandapro",
+          //   onTap: () {
+          //     Navigator.pop(context);
+          //   },
+          // ),
           ListDrawerItem(
-            icon: Container(
-              color: DefaultColor.primary,
-              child: Text(
-                " Pro ",
-                style: TextStyle(
-                    fontStyle: FontStyle.italic,
-                    color: DefaultColor.backgroundColor),
-              ),
-            ),
-            title: "Become a pandapro",
+            icon: Icon(Icons.person, color: DefaultColor.primary),
+            title: "Profile",
             onTap: () {
               Navigator.pop(context);
             },
           ),
           ListDrawerItem(
-            icon: Icon(Icons.favorite_border, color: DefaultColor.primary),
-            title: "Favourites",
+            icon: Icon(Icons.panorama_vertical_outlined,
+                color: DefaultColor.primary),
+            title: "Vouchers",
+            onTap: () {
+              Navigator.pop(context);
+            },
+          ),
+          ListDrawerItem(
+            icon: Icon(Icons.payment_outlined, color: DefaultColor.primary),
+            title: "Payment Methode",
+            onTap: () {
+              Navigator.pop(context);
+            },
+          ),
+          ListDrawerItem(
+            icon: Icon(Icons.business, color: DefaultColor.primary),
+            title: "Foodpanda for business",
             onTap: () {
               Navigator.pop(context);
             },
@@ -83,31 +107,29 @@ class HomeDrawer extends StatelessWidget {
             },
           ),
           ListDrawerItem(
-            icon: Icon(Icons.person, color: DefaultColor.primary),
-            title: "Profile",
+            icon: Icon(Icons.set_meal, color: DefaultColor.primary),
+            title: "Enjoy Meal PKR. 200",
             onTap: () {
               Navigator.pop(context);
             },
           ),
+          ListDrawerItem(
+            icon: Icon(Icons.favorite_border, color: DefaultColor.primary),
+            title: "Favourites",
+            onTap: () {
+              Navigator.pop(context);
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => FavouritiesScreen()));
+            },
+          ),
+
           ListDrawerItem(
             icon: Icon(Icons.map, color: DefaultColor.primary),
             title: "Address",
             onTap: () {
               Navigator.pop(context);
-            },
-          ),
-          ListDrawerItem(
-            icon: Icon(Icons.wine_bar_rounded, color: DefaultColor.primary),
-            title: "panda rewards",
-            onTap: () {
-              Navigator.pop(context);
-            },
-          ),
-          ListDrawerItem(
-            icon: Icon(Icons.volume_off_outlined, color: DefaultColor.primary),
-            title: "Vouchers",
-            onTap: () {
-              Navigator.pop(context);
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => AddressScreen()));
             },
           ),
           ListDrawerItem(
@@ -117,13 +139,7 @@ class HomeDrawer extends StatelessWidget {
               Navigator.pop(context);
             },
           ),
-          ListDrawerItem(
-            icon: Icon(Icons.business, color: DefaultColor.primary),
-            title: "Foodpanda for business",
-            onTap: () {
-              Navigator.pop(context);
-            },
-          ),
+
           Divider(),
           ListTile(
             leading: null,
