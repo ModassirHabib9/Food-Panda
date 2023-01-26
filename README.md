@@ -1,17 +1,1 @@
-# foodpanda_clone
- this project I will make a good UI like original app and some part are diffrent with material items that I have. Moreover I have a good guide to help me to improve this project is [@ChhunVirak](https://github.com/ChhunVirak)
 
-![foodpanda1](https://user-images.githubusercontent.com/80568234/174564223-8f701d9d-c29e-4d8f-8388-89f287dc5794.gif)
-![foodpanda2](https://user-images.githubusercontent.com/80568234/174564242-b7b3a864-1bbc-4719-8122-5249a2168d0e.gif)
-![foodpanda3](https://user-images.githubusercontent.com/80568234/174564260-79528019-1d81-4c28-a03c-ac21364ea298.gif)
-![foodpanda4](https://user-images.githubusercontent.com/80568234/174564288-d95cb6b3-c55c-4431-8372-b9fdb1726523.gif)
-![foodpanda5](https://user-images.githubusercontent.com/80568234/174564306-59e5a444-3ddd-417e-9e76-690bbbb28a8b.gif)
-![foodpanda6](https://user-images.githubusercontent.com/80568234/174564328-52b36c42-6f32-465b-a477-54d257ed3a12.gif)
-![foodpanda7](https://user-images.githubusercontent.com/80568234/174564346-325b1cff-2e4c-4f81-853e-4d33b2f63515.gif)
-![foodpanda8](https://user-images.githubusercontent.com/80568234/174564371-2c268f83-d63a-4cab-b349-2fe8276d5848.gif)
-![foodpanda9](https://user-images.githubusercontent.com/80568234/174564389-11db46d6-a988-47a7-99ed-3459f390ac13.gif)
-![foodpanda10](https://user-images.githubusercontent.com/80568234/174564405-5cae983f-0d47-4f14-a00e-093b6197c2ef.gif)
-![foodpanda11](https://user-images.githubusercontent.com/80568234/174564419-132fdb42-69f7-4247-9414-74d8ce3bf491.gif)
-![foodpanda12](https://user-images.githubusercontent.com/80568234/174564442-75956cd9-b418-411c-9f99-cf06ec247ea2.gif)
-![foodpanda14](https://user-images.githubusercontent.com/80568234/174564493-7357a33b-7257-4a82-93f4-2e3916d95e51.gif)
-![foodpanda15](https://user-images.githubusercontent.com/80568234/174564521-3e1228b5-a8e2-42a3-8bdd-5ffaca3cf324.gif)
